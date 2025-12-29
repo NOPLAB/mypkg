@@ -2,7 +2,7 @@
 
 [![Test](https://github.com/NOPLAB/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/NOPLAB/mypkg/actions/workflows/test.yml)
 
-ROS2パッケージ: 任意のトピックをbase64エンコード/デコードする
+任意のトピックをbase64エンコード/デコードする
 
 ## ノード
 
