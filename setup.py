@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 nop
+# SPDX-License-Identifier: MIT
+
 from setuptools import find_packages, setup
 
 package_name = 'b64'
