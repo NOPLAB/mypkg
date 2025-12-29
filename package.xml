@@ -3,7 +3,7 @@
 <package format="3">
   <name>b64</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>base64 encode/decode package</description>
   <maintainer email="noplab90@gmail.com">nop</maintainer>
   <license>MIT</license>
 
