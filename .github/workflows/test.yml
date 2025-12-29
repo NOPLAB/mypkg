@@ -18,6 +18,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run tests
+        shell: bash
         run: |
           source /opt/ros/${{ matrix.ros_distro }}/setup.bash
           mkdir -p ~/ros2_ws/src
