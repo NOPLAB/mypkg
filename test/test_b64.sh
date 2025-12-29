@@ -53,7 +53,7 @@ ros2 topic pub --once /test_input std_msgs/msg/String "data: '!@#\$%^&*()_+-=[]{
 wait $!
 cat /tmp/b64_test5.log | grep 'data:'
 
-# Test 6: デコード往復テスト (use serialized ROS message, not raw string)
+# Test 6: デコード往復テスト
 echo "=== Test 6: Decode roundtrip ==="
 timeout 5 ros2 topic echo /test_output --once > /tmp/b64_test6.log 2>&1 &
 sleep 1
