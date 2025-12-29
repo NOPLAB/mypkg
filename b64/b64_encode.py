@@ -1,6 +1,7 @@
 import base64
 
 import rclpy
+from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 from rclpy.serialization import serialize_message
 from rosidl_runtime_py.utilities import get_message
@@ -48,7 +49,7 @@ def main(args=None):
     node = B64EncodeNode()
     try:
         rclpy.spin(node)
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, ExternalShutdownException):
         pass
     finally:
         node.destroy_node()
